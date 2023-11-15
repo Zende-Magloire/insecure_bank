@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Withdraw Page</title>
+</head>
+<body>
+    <h1>Withdraw Page</h1>
+    <p>Welcome, {{ username }}!</p>
+    <p>Your current balance is: {{ balance }} {{ currency }}</p>
+
+    <form action="/" method="GET">
+        <label for="amount">Withdraw Amount:</label>
+        <input type="text" id="amount" name="amount">
+        <button type="submit">Withdraw</button>
+    </form>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>
