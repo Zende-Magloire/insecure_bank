@@ -9,3 +9,5 @@ For instance, entering a script like <script>alert(1)</script> is reflected in t
 If the application's context allowed for JavaScript execution, such as in a different part of the application where the input is reflected directly into an HTML page, an attacker could craft a URL containing malicious scripts that execute when visited by another user. This could lead to cross-site scripting (XSS) attacks, allowing attackers to steal cookies or perform actions on behalf of another user.
 
 This behavior encourages further experimentation with other inputs to observe results, such as negative numbers or amounts that exceed the user's current balance. A negative number input successfully alters the remaining balance. Conversely, entering a number exceeding the user's balance is also successful, leaving the remaining balance unchanged.
+
+Reference: https://github.com/yeswehack/vulnerable-code-snippets/tree/main/BusinessLogic/1
